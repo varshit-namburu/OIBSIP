@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Lobster&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #303030, #101010);
+}
+
+.header {
+  background-color: #FF9100;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.jobs {
+  color: #FF9100;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.topText {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  background: none;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 5px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Bebas Neue', cursive;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.about h1 {
+  background-color: #FF9100;
+  color: #FFFFFF;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about p {
+  background-color: #f8f8f8;
+  color: #333333;
+  font-size: 1.3rem;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about p span {
+  color: #FF9100;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .jobs {
+    font-size: 2rem;
+  }
+
+  .topText {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
